@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+Publishing | Institute for Genealogy Research
+</title>
+
+
+<meta name="description"
+content="Books and publications released by the Institute for Genealogy Research.">
+
+
+<link rel="stylesheet" href="../../css/style.css">
+
+
+<link rel="icon" href="../../favicon/favicon.ico">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<div id="header"></div>
+
+
+
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+
+<div class="section-title">
+
+
+<h1>
+Publishing
+</h1>
+
+
+<p>
+Books and publications released as part of the institute's research activity.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="publications">
+
+
+
+
+
+<article class="publication-item">
+
+
+<div class="publication-image">
+
+<img src="../../images/books/book1.jpg"
+alt="Book title">
+
+</div>
+
+
+
+<div class="publication-content">
+
+
+<h2>
+Book Title
+</h2>
+
+
+<p>
+Author: Author Name
+</p>
+
+
+<p>
+Publication Year: 2025
+</p>
+
+
+<p>
+A short description of the book and its historical subject.
+</p>
+
+
+</div>
+
+
+</article>
+
+
+
+
+
+
+
+<article class="publication-item">
+
+
+<div class="publication-image">
+
+<img src="../../images/books/book2.jpg"
+alt="Book title">
+
+</div>
+
+
+
+<div class="publication-content">
+
+
+<h2>
+Book Title
+</h2>
+
+
+<p>
+Author: Author Name
+</p>
+
+
+<p>
+Publication Year: 2024
+</p>
+
+
+<p>
+A short description of the publication.
+</p>
+
+
+</div>
+
+
+</article>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<div id="footer"></div>
+
+
+
+
+
+
+<script src="../../js/script.js"></script>
+
+
+
+<script>
+
+
+fetch("../../components/header-en.html")
+.then(res => res.text())
+.then(data => {
+    document.getElementById("header").innerHTML = data;
+});
+
+
+
+fetch("../../components/footer-en.html")
+.then(res => res.text())
+.then(data => {
+    document.getElementById("footer").innerHTML = data;
+});
+
+
+</script>
+
+
+
+</body>
+
+</html>
