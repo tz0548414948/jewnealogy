@@ -45,32 +45,20 @@
         content="#8B6A3E">
 
 
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap"
-        rel="stylesheet">
-
-
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
     <link rel="icon"
         href="../../favicon/favicon.ico">
-
-
+    <link rel="preload" href="/fonts/heebo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/frank-ruhl-libre-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet"
         href="../../css/style.css">
 
 
     <link rel="canonical"
-        href="https://jewnealogy.com/en/partner-portfolio.html">
+        href="https://jewnealogy.com/en/partners/partner-portfolio.html">
 
 
 </head>
@@ -80,6 +68,8 @@
 
 
 <div id="header"></div>
+
+<main id="main">
 
 
 <section class="section">
@@ -616,9 +606,7 @@ Through his research activities, Yehuda Aharon Horowitz has contributed to numer
 
 
 
-            <li>
-                <strong>English Publications</strong>
-            </li>
+            <li class="pub-heading">English Publications</li>
 
 
             <li>
@@ -671,9 +659,7 @@ Through his research activities, Yehuda Aharon Horowitz has contributed to numer
 
 
 
-            <li>
-                <strong>Journals and Periodicals</strong>
-            </li>
+            <li class="pub-heading">Journals and Periodicals</li>
 
 
             <li>
@@ -722,9 +708,7 @@ Through his research activities, Yehuda Aharon Horowitz has contributed to numer
 
 
 
-            <li>
-                <strong>Genealogical Research Projects</strong>
-            </li>
+            <li class="pub-heading">Genealogical Research Projects</li>
 
 
             <li>
@@ -790,6 +774,8 @@ Through his research activities, Yehuda Aharon Horowitz has contributed to numer
 
 
 
+</main>
+
 <!-- ================= BACK TO TOP ================= -->
 
 
@@ -803,79 +789,6 @@ Through his research activities, Yehuda Aharon Horowitz has contributed to numer
 
 
 
-<!-- ================= SEARCH ================= -->
-
-
-<script>
-
-const searchInput = document.getElementById("searchInput");
-
-const items = document.querySelectorAll("#publicationList li");
-
-
-searchInput.addEventListener("input", function () {
-
-
-    const filter = this.value.trim().toLowerCase();
-
-    let firstMatch = null;
-
-
-    items.forEach(function(item){
-
-
-        const text = item.textContent.toLowerCase();
-
-
-        if(filter === "" || text.includes(filter)){
-
-
-            item.style.display = "list-item";
-
-
-            if(!firstMatch && filter !== ""){
-
-                firstMatch = item;
-
-            }
-
-
-        }else{
-
-
-            item.style.display = "none";
-
-
-        }
-
-
-    });
-
-
-
-    if(firstMatch){
-
-
-        firstMatch.scrollIntoView({
-
-            behavior:"smooth",
-
-            block:"center"
-
-        });
-
-
-    }
-
-
-});
-
-
-</script>
-
-
-
-
 <!-- ================= FOOTER ================= -->
 
 
@@ -884,43 +797,7 @@ searchInput.addEventListener("input", function () {
 
 
 
-<!-- ================= LIGHTBOX ================= -->
-
-
-<div
-
-id="lightbox"
-
-class="lightbox"
-
-role="dialog"
-
-aria-modal="true">
-
-
-    <span id="closeLightbox">
-
-        ×
-
-    </span>
-
-
-
-    <img
-
-    id="lightboxImg"
-
-    src=""
-
-    alt="Enlarged image">
-
-
-</div>
-
-
-
-
-<script src="../../js/script.js"></script>
+<script src="../../js/script.js" defer></script>
 
 
 </body>

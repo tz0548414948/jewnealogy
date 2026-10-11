@@ -26,27 +26,14 @@ content="מכון לחקר גנאלוגיה">
 content="index,follow">
 
 
-
-<link rel="preconnect"
-href="https://fonts.googleapis.com">
-
-<link rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
-
-
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap"
-rel="stylesheet">
-
-
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
 <link rel="icon"
 href="../../favicon/favicon.ico">
-
-
+    <link rel="preload" href="/fonts/heebo-hebrew-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/frank-ruhl-libre-hebrew-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet"
 href="../../css/style.css">
 
@@ -61,6 +48,8 @@ href="../../css/style.css">
 <!-- HEADER -->
 
 <div id="header"></div>
+
+<main id="main">
 
 
 
@@ -202,75 +191,6 @@ class="btn">
 
 
 <span>
-פולין
-</span>
-
-
-</div>
-
-
-
-<h2>
-הקהילה היהודית בוורשה
-</h2>
-
-
-
-<p class="article-description">
-
-מאמר העוסק בתולדות יהדות ורשה,
-בחיי הקהילה, מוסדות התורה והמשפחות המרכזיות.
-
-</p>
-
-
-
-<div class="article-meta">
-
-
-<span>
-<i class="fa-solid fa-location-dot"></i>
-
-ורשה, פולין
-
-</span>
-
-
-</div>
-
-
-
-<a href="../pdf/articles/warsaw.pdf"
-target="_blank"
-class="btn">
-
-
-<i class="fa-solid fa-book-open"></i>
-
-לקריאת המאמר
-
-
-</a>
-
-
-</article>
-
-
-
-
-
-
-
-<article class="article-card">
-
-
-<div class="article-top">
-
-
-<i class="fa-solid fa-file-pdf"></i>
-
-
-<span>
 גרמניה
 </span>
 
@@ -310,7 +230,7 @@ class="btn">
 
 
 
-<a href="../../pdf/articles/frankfurt.pdf"
+<a href="../../pdf/articles/Frankfurt.pdf"
 target="_blank"
 class="btn">
 
@@ -348,7 +268,7 @@ Fürth, Germany
 </span>
 </div>
 
-<a href="../../pdf/articles/furth.pdf"
+<a href="../../pdf/articles/FURTH.pdf"
 target="_blank"
 class="btn">
 
@@ -385,7 +305,7 @@ Halberstadt, Germany
 </span>
 </div>
 
-<a href="../../pdf/articles/halberstadt.pdf"
+<a href="../../pdf/articles/Halberstadt.pdf"
 target="_blank"
 class="btn">
 
@@ -422,7 +342,7 @@ Karlsruhe, Germany
 </span>
 </div>
 
-<a href="../../pdf/articles/karlsruhe.pdf"
+<a href="../../pdf/articles/Karlsruhe.pdf"
 target="_blank"
 class="btn">
 
@@ -533,7 +453,7 @@ Research Archive
 </span>
 </div>
 
-<a href="../../pdf/articles/ahw.pdf"
+<a href="../../pdf/articles/AHW.pdf"
 target="_blank"
 class="btn">
 
@@ -642,7 +562,7 @@ Mannheim, Germany
 </div>
 
 
-<a href="../../pdf/articles/mannheim.pdf"
+<a href="../../pdf/articles/Mannheim.pdf"
 target="_blank"
 class="btn">
 
@@ -670,6 +590,8 @@ class="btn">
 
 
 
+
+</main>
 
 <!-- BACK TO TOP -->
 
@@ -699,59 +621,7 @@ aria-label="חזרה לראש העמוד">
 
 
 
-<script>
-
-
-const searchInput = document.getElementById("searchInput");
-
-const articles = document.querySelectorAll(".article-card");
-
-
-
-searchInput.addEventListener("input", function(){
-
-
-let value = this.value.toLowerCase();
-
-
-
-articles.forEach(article => {
-
-
-
-let text = article.textContent.toLowerCase();
-
-
-
-if(text.includes(value)){
-
-
-article.style.display="flex";
-
-
-}
-
-else{
-
-
-article.style.display="none";
-
-
-}
-
-
-});
-
-
-});
-
-
-</script>
-
-
-
-
-<script src="../../js/script.js"></script>
+<script src="../../js/script.js" defer></script>
 
 
 

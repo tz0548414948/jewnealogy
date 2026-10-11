@@ -38,26 +38,17 @@
     <meta name="theme-color"
         content="#8B6A3E">
 
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap"
-        rel="stylesheet">
-
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link rel="icon" href="../../favicon/favicon.ico">
-
+    <link rel="preload" href="/fonts/heebo-hebrew-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/frank-ruhl-libre-hebrew-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet"
         href="../../css/style.css">
 
        <link rel="canonical"
-        href="https://jewnealogy.com/he/partner-portfolio.html">
+        href="https://jewnealogy.com/he/partners/partner-portfolio.html">
     
 
 </head>
@@ -65,6 +56,8 @@
 <body>
 
 <div id="header"></div>
+
+<main id="main">
 <section class="section">
 
     <div class="container">
@@ -236,7 +229,7 @@
 
 <li>משפחות יואל–אדלר–קרליבך. עורך: נפתלי בר־גיורא במברגר. ירושלים תשנ"ז. פענוח כת"י ומידע.</li>
 
-<li><strong>פרסומים באנגלית</strong></li>
+<li class="pub-heading">פרסומים באנגלית</li>
 
 <li>Contemporary Halachic Problems – Vol. V. Indexer. Targum, 2005.</li>
 
@@ -252,7 +245,7 @@
 
 <li>YIVO Encyclopedia of Eastern European Jewry – Contributor on Hungarian Rabbis. New York, 2008.</li>
 
-<li><strong>בטאונים וכתבי עת</strong></li>
+<li class="pub-heading">בטאונים וכתבי עת</li>
 
 <li>קולמוס – גיליון חגיגי לסיום הש"ס (אדר א' תשס"ה). עורך.</li>
 
@@ -270,7 +263,7 @@
 
 <li>חבר מערכת "ירושתינו".</li>
 
-<li><strong>מחקרים גנאלוגיים</strong></li>
+<li class="pub-heading">מחקרים גנאלוגיים</li>
 
 <li>משפחת רוגוזניצקי מקרדיף – לייפציג.</li>
 
@@ -297,6 +290,8 @@
 </div>
 
 </section>
+</main>
+
 <!-- ================= BACK TO TOP ================= -->
 
 <button
@@ -307,68 +302,9 @@
 
 </button>
 
-<!-- ================= SEARCH ================= -->
-<script>
-const searchInput = document.getElementById("searchInput");
-const items = document.querySelectorAll("#publicationList li");
-
-searchInput.addEventListener("input", function () {
-
-    const filter = this.value.trim().toLowerCase();
-    let firstMatch = null;
-
-    items.forEach(function(item){
-
-        const text = item.textContent.toLowerCase();
-
-        if(filter === "" || text.includes(filter)){
-
-            item.style.display = "list-item";
-
-            if(!firstMatch && filter !== ""){
-                firstMatch = item;
-            }
-
-        }else{
-
-            item.style.display = "none";
-
-        }
-
-    });
-
-    if(firstMatch){
-
-        firstMatch.scrollIntoView({
-            behavior:"smooth",
-            block:"center"
-        });
-
-    }
-
-});
-</script>
-
 <!-- ================= FOOTER ================= -->
 <div id="footer"></div>
-<!-- ================= LIGHTBOX ================= -->
-<div
-id="lightbox"
-class="lightbox"
-role="dialog"
-aria-modal="true">
-
-    <span id="closeLightbox">
-
-        ×
-
-    </span>
-
-    <img id="lightboxImg" src="" alt="תמונה מוגדלת">
-
-</div>
-
-<script src="../../js/script.js"></script>
+<script src="../../js/script.js" defer></script>
 
 </body>
 
