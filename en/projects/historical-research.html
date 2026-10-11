@@ -15,16 +15,18 @@ Historical Research & Community Documentation | Institute for Genealogy Research
 
 <meta name="description"
 content="Historical research, community documentation and heritage preservation by the Institute for Genealogy Research.">
-
-
+    <link rel="preload" href="/fonts/heebo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/frank-ruhl-libre-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../../css/style.css">
 
 <link rel="icon" href="../../favicon/favicon.ico">
 
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+
+<meta name="robots" content="noindex">
 
 </head>
 
@@ -33,6 +35,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 
 <div id="header"></div>
+
+<main id="main">
 
 
 
@@ -74,15 +78,6 @@ the heritage of communities and families.
 <article class="publication-item">
 
 
-<div class="publication-image">
-
-<img src="../../images/research/community1.jpg"
-alt="Community name">
-
-</div>
-
-
-
 <div class="publication-content">
 
 
@@ -116,15 +111,6 @@ for documentation.
 
 
 <article class="publication-item">
-
-
-<div class="publication-image">
-
-<img src="../../images/research/community2.jpg"
-alt="Community name">
-
-</div>
-
 
 
 <div class="publication-content">
@@ -169,6 +155,13 @@ and its main findings.
 
 
 
+</main>
+
+
+<button id="backToTop" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+</button>
+
 <div id="footer"></div>
 
 
@@ -177,29 +170,7 @@ and its main findings.
 
 
 
-<script src="../../js/script.js"></script>
-
-
-
-<script>
-
-
-fetch("../../components/header-en.html")
-.then(res => res.text())
-.then(data => {
-    document.getElementById("header").innerHTML = data;
-});
-
-
-
-fetch("../../components/footer-en.html")
-.then(res => res.text())
-.then(data => {
-    document.getElementById("footer").innerHTML = data;
-});
-
-
-</script>
+<script src="../../js/script.js" defer></script>
 
 
 

@@ -27,12 +27,6 @@
 
     <meta name="theme-color" content="#8B6A3E">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="icon" href="../favicon/favicon.ico">
@@ -57,8 +51,27 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
         gtag('config', 'G-6Z3PQ21ZE0');
     </script>
-
+    <link rel="preload" href="/fonts/heebo-hebrew-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/frank-ruhl-libre-hebrew-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preload" href="../images/hero.jpg" as="image" fetchpriority="high">
+
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "מכון לחקר גנאלוגיה",
+        "url": "https://jewnealogy.com/he/",
+        "logo": "https://jewnealogy.com/images/logo.jpg",
+        "description": "מחקר שורשים, תיעוד משפחות, בניית אילנות יוחסין ומחקר בארכיונים בארץ ובעולם.",
+        "email": "jewnealogy@gmail.com",
+        "inLanguage": "he",
+        "sameAs": ["https://www.youtube.com/@Horovitzjudaica"]
+    }
+    </script>
 
 </head>
 
@@ -67,7 +80,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
     <div id="header"></div>
 
-<main>
+<main id="main">
 <!-- ================= HERO ================= -->
 
     <section id="home" class="hero">
@@ -130,8 +143,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                     alt="לוגו מכון לחקר גנאלוגיה"
                     loading="lazy"
                     decoding="async"
-                    width="350"
-                    height="350">
+                    width="829" height="301">
 
             </div>
 
@@ -202,6 +214,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
             </article>
 
+            <article class="expertise-item" data-modal="books">
+
+                <span class="bullet"></span>
+
+                <h3>עריכה והוצאה לאור</h3>
+
+            </article>
+
         </div>
 
     </div>
@@ -244,16 +264,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
            <div class="cards">
 
         <a href="projects/articles.html" class="project-card" aria-label="מעבר לעמוד כתבות ומאמרים">
+           <i class="fa-solid fa-newspaper expertise-icon" aria-hidden="true"></i>
            <h3>כתבות ומאמרים</h3>
            <p>מאמרים, כתבות ופרסומים מקצועיים.</p>
         </a>
 
         <a href="projects/publishing.html" class="project-card" aria-label="מעבר לעמוד הוצאה לאור">
+           <i class="fa-solid fa-book expertise-icon" aria-hidden="true"></i>
            <h3>הוצאה לאור</h3>
            <p>הוצאה לאור של ספרים ומחקרים.</p>
         </a>
 
         <a href="projects/historical-research.html" class="project-card" aria-label="מעבר לעמוד מחקר היסטורי ותיעוד קהילות">
+           <i class="fa-solid fa-landmark expertise-icon" aria-hidden="true"></i>
            <h3>מחקר היסטורי ותיעוד קהילות</h3>
            <p>מחקר משפחות, קהילות ויישובים לאורך הדורות.</p>
         </a>
@@ -261,7 +284,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                     <!-- כרטיס 1 -->
 
             <a href="partners/partner-portfolio.html" class="project-card" aria-label="מעבר לעמוד תיק עבודות">
-                <i class="fa-solid fa-landmark expertise-icon" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open expertise-icon" aria-hidden="true"></i>
 
                 <h3>תיק עבודות</h3>
 
@@ -273,8 +296,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 </div>
 </section>
 
-<!-- ================= COLLABORATIONS ================= -->
-
+<!-- COLLABORATIONS: hidden until real partners, logos and pages exist.
+     Every card below pointed to a page or logo that is not in the repository.
+     To bring it back: remove these comment markers and re-add the nav links.
 <section id="collaborations" class="section light">
 
     <div class="container">
@@ -347,6 +371,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     </div>
 
 </section>
+-->
 
   <!-- ================= GALLERY ================= -->
 
@@ -373,8 +398,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                     class="gallery-item zoom"
                     loading="lazy"
                     decoding="async"
-                    width="220" 
-                    height="220">
+                    width="800"
+                    height="600">
                     
 
                 <img src="../images/gallery2.jpg"
@@ -382,8 +407,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                     class="gallery-item zoom"
                     loading="lazy"
                     decoding="async"
-                    width="220" 
-                    height="220">
+                    width="800"
+                    height="600">
                     
 
                 <img src="../images/gallery3.jpg"
@@ -391,16 +416,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                     class="gallery-item zoom"
                     loading="lazy"
                     decoding="async"
-                    width="220" 
-                    height="220">
+                    width="800"
+                    height="600">
                    
                 <img src="../images/gallery4.jpg"
                     alt="ספר משפחה"
                     class="gallery-item zoom"
                     loading="lazy"
                     decoding="async"
-                    width="220" 
-                    height="220"> 
+                    width="800"
+                    height="600"> 
 
             </div>
 
@@ -408,7 +433,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
     </section>
 
-    <section class="media-section">
+    <section id="media" class="media-section">
 
     <div class="container">
 
@@ -432,7 +457,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
             </a>
 
-            <a href="https://spotify.com/XXXX"
+            <!-- Podcasts card hidden: its Spotify link was still the placeholder spotify.com/XXXX
+<a href="https://spotify.com/XXXX"
                class="media-card"
                target="_blank">
 
@@ -443,6 +469,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                 <span>האזנה לפרקים</span>
 
             </a>
+-->
 
             <a href="https://chat.whatsapp.com/GLvk5vlGPkk5eFAnQh89uy?s=sh&p=a&ilr=4"
                class="media-card"
@@ -457,7 +484,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
             </a>
 
             <a href="https://www.youtube.com/watch?v=a-GNtMa04eE&t=49s"
-               class="media-card">
+               class="media-card"
+               target="_blank">
 
                 <i class="fa-regular fa-file-lines"></i>
 
@@ -472,20 +500,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     </div>
 
 </section>
-    <!-- ================= LIGHTBOX ================= -->
-
-    <div id="lightbox" class="lightbox">
-
-        <button
-         id="closeLightbox"
-         type="button"
-         aria-label="סגור גלריה">
-            ×
-        </button>
-
-        <img id="lightboxImg" src="" alt="" decoding="async">
-
-    </div>
     <!-- ================= CONTACT ================= -->
 
     <section id="contact" class="section">
@@ -509,6 +523,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
                 <div class="form-grid">
 
+                    <label class="sr-only" for="name">שם מלא</label>
+
                     <input
                         type="text"
                         id="name"
@@ -516,6 +532,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                         autocomplete="name"
                         placeholder="שם מלא"
                         required>
+
+                    <label class="sr-only" for="email">אימייל</label>
 
                     <input
                         type="email"
@@ -527,6 +545,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
                 </div>
 
+                <label class="sr-only" for="phone">טלפון</label>
+
                 <input
                     type="tel"
                     id="phone"
@@ -534,12 +554,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                     autocomplete="tel"
                     placeholder="טלפון">
 
+                <label class="sr-only" for="message">הודעה</label>
+
                 <textarea
                     id="message"
                     name="message"
                     rows="6"
                     placeholder="ספרו לנו כיצד נוכל לעזור..."
                     required></textarea>
+
+                <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
@@ -565,8 +589,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         </div>
 
     </section>
+</main>
 
-    <!-- ================= WHATSAPP ================= -->
+<!-- ================= WHATSAPP ================= -->
 
     
         <a
@@ -593,7 +618,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     <!-- ================= FOOTER ================= -->
 <div id="footer"></div>
 
-    <script src="../js/script.js"></script>
+    <script src="../js/script.js" defer></script>
 
 
 </body>

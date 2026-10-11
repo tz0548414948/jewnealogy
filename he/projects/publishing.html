@@ -9,13 +9,16 @@
 <title>
 הוצאה לאור | מכון לחקר גנאלוגיה
 </title>
-
+    <link rel="preload" href="/fonts/heebo-hebrew-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/frank-ruhl-libre-hebrew-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../../css/style.css">
 
 <link rel="icon" href="../../favicon/favicon.ico">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<meta name="robots" content="noindex">
 
 </head>
 
@@ -24,6 +27,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 
 <div id="header"></div>
+
+<main id="main">
 
 
 
@@ -88,14 +93,6 @@ alt="שם הספר">
 <article class="publication-item">
 
 
-<div class="publication-image">
-
-<img src="../../images/books/book2.jpg"
-alt="שם הספר">
-
-</div>
-
-
 <div class="publication-content">
 
 <h2>
@@ -130,30 +127,19 @@ alt="שם הספר">
 
 
 
+</main>
+
+
+<button id="backToTop" type="button" aria-label="חזרה לראש העמוד">
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+</button>
+
 <div id="footer"></div>
 
 
 
 
-<script src="../../js/script.js"></script>
-
-
-<script>
-
-fetch("../../components/header-he.html")
-.then(res => res.text())
-.then(data => {
-document.getElementById("header").innerHTML = data;
-});
-
-
-fetch("../../components/footer-he.html")
-.then(res => res.text())
-.then(data => {
-document.getElementById("footer").innerHTML = data;
-});
-
-</script>
+<script src="../../js/script.js" defer></script>
 
 
 </body>

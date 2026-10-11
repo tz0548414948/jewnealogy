@@ -15,16 +15,18 @@
 
 <meta name="description"
 content="מחקרים היסטוריים, תיעוד קהילות ושימור מורשת במכון לחקר גנאלוגיה.">
-
-
+    <link rel="preload" href="/fonts/heebo-hebrew-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/frank-ruhl-libre-hebrew-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../../css/style.css">
 
 <link rel="icon" href="../../favicon/favicon.ico">
 
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+
+<meta name="robots" content="noindex">
 
 </head>
 
@@ -33,6 +35,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 
 <div id="header"></div>
+
+<main id="main">
 
 
 
@@ -73,14 +77,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <article class="publication-item">
 
 
-<div class="publication-image">
-
-<img src="../../images/research/community1.jpg"
-alt="שם הקהילה">
-
-</div>
-
-
 <div class="publication-content">
 
 
@@ -112,14 +108,6 @@ alt="שם הקהילה">
 
 
 <article class="publication-item">
-
-
-<div class="publication-image">
-
-<img src="../../images/research/community2.jpg"
-alt="שם הקהילה">
-
-</div>
 
 
 <div class="publication-content">
@@ -161,6 +149,13 @@ alt="שם הקהילה">
 
 
 
+</main>
+
+
+<button id="backToTop" type="button" aria-label="חזרה לראש העמוד">
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+</button>
+
 <div id="footer"></div>
 
 
@@ -168,28 +163,8 @@ alt="שם הקהילה">
 
 
 
-<script src="../../js/script.js"></script>
+<script src="../../js/script.js" defer></script>
 
-
-
-<script>
-
-
-fetch("../../components/header-he.html")
-.then(res => res.text())
-.then(data => {
-document.getElementById("header").innerHTML = data;
-});
-
-
-fetch("../../components/footer-he.html")
-.then(res => res.text())
-.then(data => {
-document.getElementById("footer").innerHTML = data;
-});
-
-
-</script>
 
 
 </body>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://jewnealogy.com/he/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://jewnealogy.com/he/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jewnealogy.com/en/index.html"/>
+  </url>
+  <url>
+    <loc>https://jewnealogy.com/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://jewnealogy.com/he/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jewnealogy.com/en/index.html"/>
+  </url>
+  <url>
+    <loc>https://jewnealogy.com/he/projects/articles.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://jewnealogy.com/he/projects/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jewnealogy.com/en/projects/articles.html"/>
+  </url>
+  <url>
+    <loc>https://jewnealogy.com/en/projects/articles.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://jewnealogy.com/he/projects/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jewnealogy.com/en/projects/articles.html"/>
+  </url>
+  <url>
+    <loc>https://jewnealogy.com/he/partners/partner-portfolio.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://jewnealogy.com/he/partners/partner-portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jewnealogy.com/en/partners/partner-portfolio.html"/>
+  </url>
+  <url>
+    <loc>https://jewnealogy.com/en/partners/partner-portfolio.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://jewnealogy.com/he/partners/partner-portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jewnealogy.com/en/partners/partner-portfolio.html"/>
+  </url>
+</urlset>

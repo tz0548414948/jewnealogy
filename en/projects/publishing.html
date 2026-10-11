@@ -15,8 +15,8 @@ Publishing | Institute for Genealogy Research
 
 <meta name="description"
 content="Books and publications released by the Institute for Genealogy Research.">
-
-
+    <link rel="preload" href="/fonts/heebo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/frank-ruhl-libre-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../../css/style.css">
 
 
@@ -24,8 +24,10 @@ content="Books and publications released by the Institute for Genealogy Research
 
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+
+<meta name="robots" content="noindex">
 
 </head>
 
@@ -34,6 +36,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 
 <div id="header"></div>
+
+<main id="main">
 
 
 
@@ -120,15 +124,6 @@ A short description of the book and its historical subject.
 <article class="publication-item">
 
 
-<div class="publication-image">
-
-<img src="../../images/books/book2.jpg"
-alt="Book title">
-
-</div>
-
-
-
 <div class="publication-content">
 
 
@@ -176,6 +171,13 @@ A short description of the publication.
 
 
 
+</main>
+
+
+<button id="backToTop" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+</button>
+
 <div id="footer"></div>
 
 
@@ -183,29 +185,7 @@ A short description of the publication.
 
 
 
-<script src="../../js/script.js"></script>
-
-
-
-<script>
-
-
-fetch("../../components/header-en.html")
-.then(res => res.text())
-.then(data => {
-    document.getElementById("header").innerHTML = data;
-});
-
-
-
-fetch("../../components/footer-en.html")
-.then(res => res.text())
-.then(data => {
-    document.getElementById("footer").innerHTML = data;
-});
-
-
-</script>
+<script src="../../js/script.js" defer></script>
 
 
 
